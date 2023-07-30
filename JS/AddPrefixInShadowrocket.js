@@ -171,8 +171,8 @@ else{
      console.log("明文节点，不转码，直接命名");
        var B = $response.body;
 }
-
-var R = B.replace(/(.+)/g,'['+MZ+'] $1');
+ 
+var R = B.replace(/(\&remark=|\#)/g,'$1['+MZ+']%20');
 
 console.log(R);
 //$done({headers:H,body:R});
