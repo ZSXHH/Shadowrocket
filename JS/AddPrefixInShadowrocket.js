@@ -150,7 +150,7 @@ var Sub = $persistentStore.read('Line').split('&');
 
 for(i=1;i<6;i++){
     if(Sub[i].includes(murl)){
-       var MZ =Sub.match(/^[^\s]+/)[0];
+       var MZ =Sub[i].match(/^[^\s]+/)[0];
         break;
 }
 }
