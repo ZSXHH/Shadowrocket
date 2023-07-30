@@ -172,7 +172,7 @@ else{
        var B = $response.body;
 }
  
-var R = B.replace(/(\&remark=|\#)/g,'$1['+MZ+']%20');
+var R = B.replace(/(\&remark=|\#)/g,'$1%5B'+MZ+'%5D%20');
 
 console.log(R);
 //$done({headers:H,body:R});
